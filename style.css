@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Herr+Von+Muellerhoff&family=Zeyada&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +9,15 @@
     font-style: normal;
     scroll-behavior: smooth;
 }
-
+.intro{
+    font-family: "Zeyada", cursive;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.25);
+    align-self: self-start;
+}
+.intro:nth-child(5){
+    align-self: self-end;
+}
 html {
     height: 100vh;
 
@@ -90,12 +99,12 @@ h1 {
 .coolHeading p{
     color: white;
     font-size: 18px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.1);
     width: fit-content;
     padding: 8px 16px;
     text-align: center;
     border-radius: 0px 8px 0px 8px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     text-transform: capitalize;
 }
 .coolHeading h6{
@@ -108,4 +117,25 @@ h1 {
     background: white;
     border-radius: 32px;
     position: relative;
+    transition: all ease-in-out .25s;
+}
+.coolHeading a:hover{
+    box-shadow: 0px 0px 32px 1px rgba(255, 255, 255, 0.8);
+}
+.sptf{
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+footer{
+    color: rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    padding: 32px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+footer p span{
+    color: rgba(255, 255, 255, 0.8);
 }
